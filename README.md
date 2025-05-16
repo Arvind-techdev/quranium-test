@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quranium-test
 
-## Getting Started
+A modern, innovative web application that brings the Quran experience into the Web3 era, featuring interactive 3D elements and smooth animations.
 
-First, run the development server:
+## 🌐 Live Demo
 
+Visit the live application at: [Quranium](https://quranium-test.vercel.app/)
+
+## ✨ Features
+
+### 1. Interactive 3D Hero Section
+- Spline 3D scene integration with dynamic animations
+- Interactive object rotation based on user interaction
+- Synchronized animations with page elements
+- Responsive design for all screen sizes
+- Loading animation using Spline loader for smooth initial loading experience
+
+### 2. Scroll-Based Animations
+- Parallax effects with multi-speed elements
+- Dynamic Spline object transformations
+- Smooth scroll-triggered animations
+
+### 3. Interactive Elements
+- 3D animated "Get Started" button
+- Ripple effects on interaction
+- Synchronized Spline object animations
+
+### 4. Page Transitions
+- Smooth fade and slide transitions between pages
+- Dynamic Spline object state management
+- Seamless navigation experience
+
+### 5. Responsive Design
+- Optimized for desktop and mobile devices
+- Adaptive Spline scene sizing
+- Touch-friendly interactions
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js
+- **3D Integration**: Spline
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+- **Font**: Inter (Google Fonts)
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/quranium.git
+cd quranium
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+quranium-test/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── Providers.tsx
+│   │   ├── ClientLayout.tsx
+│   │   └── SplineLoader.tsx
+│   └── styles/
+├── public/
+└── package.json
+```
 
-## Learn More
+## 🔧 Configuration
 
-To learn more about Next.js, take a look at the following resources:
+The project uses various configuration files:
+- `next.config.js` - Next.js configuration
+- `tailwind.config.js` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Modern, clean interface
+- Interactive 3D elements
+- Smooth animations and transitions
+- Responsive layout
+- Dark mode support
+- Spline loader point for enhanced user experience
 
-## Deploy on Vercel
+## 📱 Responsive Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application is fully responsive and optimized for:
+- Desktop (1920px and below)
+- Tablet (1024px and below)
+- Mobile (768px and below)

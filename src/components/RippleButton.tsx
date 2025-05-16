@@ -31,7 +31,7 @@ export function RippleButton({ onClick }: RippleButtonProps) {
     if (onClick) {
       onClick();
     }
-    };
+  };
 
   return (
     <motion.button

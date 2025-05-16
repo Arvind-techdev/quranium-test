@@ -27,9 +27,8 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -53,11 +52,10 @@ export default function Navbar() {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`relative text-sm font-medium transition-colors duration-200 ${
-                  pathname === item.path
-                    ? 'text-purple-600 dark:text-purple-400'
-                    : 'text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400'
-                }`}
+                className={`relative text-sm font-medium transition-colors duration-200 ${pathname === item.path
+                  ? 'text-purple-600 dark:text-purple-400'
+                  : 'text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400'
+                  }`}
               >
                 {item.name}
                 {pathname === item.path && (
@@ -113,11 +111,10 @@ export default function Navbar() {
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
-                    pathname === item.path
-                      ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20'
-                  }`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${pathname === item.path
+                    ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20'
+                    : 'text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20'
+                    }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
